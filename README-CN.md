@@ -410,12 +410,13 @@ Wechat Enterprise Account commands:
   wechat batch_syncuser [SYNC_USER_CSV_MEDIA_ID]                # 增量更新成员
   wechat callbackip                                             # 获取微信服务器IP地址
   wechat convert_to_openid [USER_ID]                            # userid转换成openid
-  wechat custom_image [OPENID, IMAGE_PATH]                      # 发送图片客服消息
-  wechat custom_music [OPENID, THUMBNAIL_PATH, MUSIC_URL]       # 发送音乐客服消息
-  wechat custom_news [OPENID, NEWS_YAML_PATH]                   # 发送图文客服消息
-  wechat custom_text [OPENID, TEXT_MESSAGE]                     # 发送文字客服消息
-  wechat custom_video [OPENID, VIDEO_PATH]                      # 发送视频客服消息
-  wechat custom_voice [OPENID, VOICE_PATH]                      # 发送语音客服消息
+  wechat custom_image [USER_ID, IMAGE_PATH]                      # 发送图片客服消息
+  wechat custom_music [USER_ID, THUMBNAIL_PATH, MUSIC_URL]       # 发送音乐客服消息
+  wechat custom_news [USER_ID, NEWS_YAML_PATH]                   # 发送图文客服消息
+  wechat custom_text [USER_ID, TEXT_MESSAGE]                     # 发送文字客服消息
+  wechat custom_video [USER_ID, VIDEO_PATH]                      # 发送视频客服消息
+  wechat custom_voice [USER_ID, VOICE_PATH]                      # 发送语音客服消息
+  wechat custom_message_send [MESSAGE_OBJECT]                   # 自定义消息参考微信消息api
   wechat department [DEPARTMENT_ID]                             # 获取部门列表
   wechat department_create [NAME, PARENT_ID]                    # 创建部门
   wechat department_delete [DEPARTMENT_ID]                      # 删除部门
